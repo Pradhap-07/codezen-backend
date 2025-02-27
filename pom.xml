@@ -12,11 +12,11 @@
 	<description>CodeZen – AI-Powered Code Architect Backend</description>
 
 	<properties>
-		<java.version>21</java.version>
+		<java.version>17</java.version>
 		<spring.boot.version>3.4.2</spring.boot.version>
-	
-		<maven.compiler.source>21</maven.compiler.source>
-		<maven.compiler.target>21</maven.compiler.target>
+
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
 	</properties>
 
 	<repositories>
@@ -204,8 +204,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.11.0</version>
 				<configuration>
-					<source>21</source>
-					<target>21</target>
+					<source>17</source>
+					<target>17</target>
 				</configuration>
 			</plugin>
 
