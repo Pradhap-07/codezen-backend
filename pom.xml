@@ -21,6 +21,11 @@
 			<id>jjwt-repo</id>
 			<url>https://jitpack.io</url>
 		</repository>
+
+		<repository>
+			<id>central</id>
+			<url>https://repo.maven.apache.org/maven2</url>
+		</repository>
 	</repositories>
 
 
@@ -194,11 +199,13 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.11.0</version>  <!-- Upgrade to the latest version -->
+				<version>3.11.0</version>
 				<configuration>
-					<release>${java.version}</release>
+					<source>21</source>
+					<target>21</target>
 				</configuration>
 			</plugin>
+
 
 		</plugins>
 	</build>
