@@ -11,7 +11,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/code")
-@CrossOrigin(origins = "http://localhost:3000") // Allow React frontend access
+@CrossOrigin(origins = "*") // Allow React frontend access
 public class CodeReviewController {
 
     private final CodeReviewService codeReviewService;
