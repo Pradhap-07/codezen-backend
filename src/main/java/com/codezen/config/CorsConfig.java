@@ -13,8 +13,14 @@ public class CorsConfig {
 	@Bean
 	public CorsFilter corsFilter() {
 		CorsConfiguration corsConfiguration = new CorsConfiguration();
-		corsConfiguration.setAllowCredentials(true); // Allow credentials
-		corsConfiguration.setAllowedOrigins(List.of("http://localhost:3000")); // Set frontend URL
+		corsConfiguration.setAllowCredentials(true); // Allow credentials (only if needed)
+
+		// 🔥 Allow requests from both localhost and Vercel
+		corsConfiguration.setAllowedOrigins(List.of(
+				"http://localhost:3000",
+				"https://codezen-psi.vercel.app" // Replace with actual Vercel domain
+		));
+
 		corsConfiguration.setAllowedHeaders(List.of("*")); // Allow all headers
 		corsConfiguration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
 
